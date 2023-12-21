@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x = 1;
+    int sum = 0;
+    while (x <= 100) {
+        if (x > 10) {
+            sum = sum + x;
+        }
+        else {
+            sum = sum - x;
+        }
+        x = x + 1;
+    }
+    print(sum);
+}
