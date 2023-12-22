@@ -299,7 +299,7 @@ comp_op : TOK_LESS_OR_EQUAL {$$ = TOK_LESS_OR_EQUAL;}
        | TOK_NOT_EQUAL {$$ = TOK_NOT_EQUAL;};
 
 if : TOK_IF TOK_OPEN_BRACKET bool_expr TOK_CLOSE_BRACKET TOK_OPEN_FIGURE_BRACKET body TOK_CLOSE_FIGURE_BRACKET else_if else {
-       struct Command new_command = createCommand("IFELSE", IFELSE, $3, $8, 0);
+       struct Command new_command = createCommand("IFELSE", IFELSE, $3, $9, 0);
        insertCommand(&commands, new_command, pop(&last_command_log_expr));
 };
 
