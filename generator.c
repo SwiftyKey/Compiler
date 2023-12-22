@@ -109,7 +109,7 @@ void generate_header(struct SymbolTable *table){
   printf("format_int:\n\t.ascii \"%%d\\n\"\n");
   printf("format_float:\n\t.ascii \"%%f\\n\"\n");
 
-  printf(".text\n.globl _main\n_main:\n");
+  printf(".text\n.globl main\nmain:\n");
   printf("pushl %%ebp\nmovl %%esp, %%ebp\n");
 
   int mem = memoryByte(table);
